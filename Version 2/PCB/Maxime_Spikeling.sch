@@ -1,0 +1,1089 @@
+EESchema Schematic File Version 4
+LIBS:Maxime_Spikeling-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP3208lib:MCP3208 U4
+U 1 1 5BC9317C
+P 8200 2800
+F 0 "U4" H 8175 3472 50  0000 C CNN
+F 1 "MCP3208" H 8175 3381 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W10.16mm" H 8300 2800 50  0001 C CNN
+F 3 "" H 8300 2800 50  0001 C CNN
+	1    8200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L mcp23s08:MCP23S08 U1
+U 1 1 5BC938FB
+P 4200 2800
+F 0 "U1" H 4175 3472 50  0000 C CNN
+F 1 "MCP23S08" H 4175 3381 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm_Socket" H 4300 2800 50  0001 C CNN
+F 3 "" H 4300 2800 50  0001 C CNN
+	1    4200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L huzzahesp32:HuzzahESP32 U3
+U 1 1 5BC9991E
+P 6150 2800
+F 0 "U3" H 6275 3472 50  0000 C CNN
+F 1 "HuzzahESP32" H 6275 3381 50  0000 C CNN
+F 2 "Maxime:Adafruit Huzzah 32" H 6250 2800 50  0001 C CNN
+F 3 "" H 6250 2800 50  0001 C CNN
+	1    6150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maxi_MCU_Module:MAX7219 U5
+U 1 1 5BC9B0FB
+P 8350 4750
+F 0 "U5" H 8375 5272 50  0000 C CNN
+F 1 "MAX7219" H 8375 5181 50  0000 C CNN
+F 2 "Package_DIP:DIP-24_W10.16mm_LongPads" H 8350 4750 50  0001 C CNN
+F 3 "" H 8350 4750 50  0001 C CNN
+	1    8350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L maxi_MCU_Module:SN74AHCT125 U2
+U 1 1 5BC9B144
+P 6050 5200
+F 0 "U2" H 6275 6172 50  0000 C CNN
+F 1 "SN74AHCT125" H 6275 6081 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 6050 5200 50  0001 C CNN
+F 3 "" H 6050 5200 50  0001 C CNN
+	1    6050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L maxi_MCU_Module:KWL_R1230CDUGB U6
+U 1 1 5BC9B983
+P 9750 4800
+F 0 "U6" H 9825 5372 50  0000 C CNN
+F 1 "KWL_R1230CDUGB" H 9825 5281 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770858-x_2x05_P4.14mm_Vertical" H 9750 4800 50  0001 C CNN
+F 3 "" H 9750 4800 50  0001 C CNN
+	1    9750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L maxi_MCU_Module:KWL_R1230CDUGB U7
+U 1 1 5BC9B9D8
+P 9750 5750
+F 0 "U7" H 9825 6322 50  0000 C CNN
+F 1 "KWL_R1230CDUGB" H 9825 6231 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770858-x_2x05_P4.14mm_Vertical" H 9750 5750 50  0001 C CNN
+F 3 "" H 9750 5750 50  0001 C CNN
+	1    9750 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5BC9BA25
+P 3300 5800
+F 0 "#PWR0101" H 3300 5550 50  0001 C CNN
+F 1 "GNDREF" H 3305 5627 50  0000 C CNN
+F 2 "" H 3300 5800 50  0001 C CNN
+F 3 "" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4800 7300 4800
+Wire Wire Line
+	7300 4800 7300 5800
+Wire Wire Line
+	8650 3100 8950 3100
+Wire Wire Line
+	8950 3100 8950 3700
+Wire Wire Line
+	8950 3700 7300 3700
+Wire Wire Line
+	7300 3700 7300 4800
+Wire Wire Line
+	5650 2700 5200 2700
+Wire Wire Line
+	5200 2700 5200 5800
+Connection ~ 5200 5800
+Wire Wire Line
+	5200 5800 3900 5800
+Connection ~ 3300 5800
+Wire Wire Line
+	4650 2400 4800 2400
+Wire Wire Line
+	4800 2400 4800 1700
+Wire Wire Line
+	6750 4500 7150 4500
+Wire Wire Line
+	7200 4500 7200 1700
+Wire Wire Line
+	4800 1700 5400 1700
+Wire Wire Line
+	7200 1700 8950 1700
+Wire Wire Line
+	8950 1700 8950 2400
+Connection ~ 7200 1700
+Wire Wire Line
+	8650 2400 8950 2400
+Connection ~ 8950 2400
+Wire Wire Line
+	8950 2400 8950 2500
+Wire Wire Line
+	8850 5000 9100 5000
+Wire Wire Line
+	9100 6300 10700 6300
+Wire Wire Line
+	10700 6300 10700 1700
+Wire Wire Line
+	10700 1700 10200 1700
+Connection ~ 8950 1700
+Wire Wire Line
+	6900 3100 7400 3100
+Wire Wire Line
+	7400 3100 7400 3500
+Wire Wire Line
+	7400 3500 8800 3500
+Wire Wire Line
+	8800 3500 8800 3000
+Wire Wire Line
+	8800 3000 8650 3000
+Connection ~ 7300 4800
+Wire Wire Line
+	3700 3000 3500 3000
+Wire Wire Line
+	3500 3000 3500 3500
+Wire Wire Line
+	3500 3500 5000 3500
+Wire Wire Line
+	5000 3500 5000 3300
+Wire Wire Line
+	5000 3300 5650 3300
+Wire Wire Line
+	3700 2600 2850 2600
+Wire Wire Line
+	2850 2600 2850 4100
+Wire Wire Line
+	6900 3900 7000 3900
+Wire Wire Line
+	7000 3900 7000 4100
+Wire Wire Line
+	7000 4100 2850 4100
+Wire Wire Line
+	8850 4500 8850 4100
+Wire Wire Line
+	8850 4100 7000 4100
+Connection ~ 7000 4100
+Wire Wire Line
+	8650 2800 9100 2800
+Wire Wire Line
+	9100 2800 9100 4100
+Wire Wire Line
+	9100 4100 8850 4100
+Connection ~ 8850 4100
+Wire Wire Line
+	6900 3800 7500 3800
+Wire Wire Line
+	7500 3800 7500 4250
+Wire Wire Line
+	7500 4250 2700 4250
+Wire Wire Line
+	2700 4250 2700 2500
+Wire Wire Line
+	2700 2500 3700 2500
+Wire Wire Line
+	7500 4250 7800 4250
+Wire Wire Line
+	7800 4250 7800 4500
+Connection ~ 7500 4250
+Wire Wire Line
+	8650 2900 9200 2900
+Wire Wire Line
+	9200 2900 9200 4250
+Wire Wire Line
+	9200 4250 7800 4250
+Connection ~ 7800 4250
+Wire Wire Line
+	5650 2500 5400 2500
+Wire Wire Line
+	5400 2500 5400 1700
+Connection ~ 5400 1700
+Wire Wire Line
+	5400 1700 7200 1700
+NoConn ~ 5650 2400
+NoConn ~ 5650 2600
+NoConn ~ 7700 3100
+Wire Wire Line
+	2550 4200 2550 2400
+Wire Wire Line
+	2550 2400 3700 2400
+Wire Wire Line
+	8650 2700 9300 2700
+Wire Wire Line
+	9300 2700 9300 4200
+Wire Wire Line
+	9300 4200 7100 4200
+Wire Wire Line
+	8850 5600 9300 5600
+Wire Wire Line
+	9300 5600 9300 4200
+Connection ~ 9300 4200
+Wire Wire Line
+	5650 3200 4850 3200
+Wire Wire Line
+	4850 3200 4850 5950
+Wire Wire Line
+	4850 5950 7450 5950
+Wire Wire Line
+	5650 3700 5400 3700
+Wire Wire Line
+	5400 3700 5400 4600
+Wire Wire Line
+	5400 4600 5800 4600
+Wire Wire Line
+	5650 3800 5300 3800
+Wire Wire Line
+	5300 3800 5300 4900
+Wire Wire Line
+	5300 4900 5800 4900
+Wire Wire Line
+	5200 5800 5650 5800
+Wire Wire Line
+	5800 4500 5650 4500
+Wire Wire Line
+	5650 4500 5650 4800
+Connection ~ 5650 5800
+Wire Wire Line
+	5650 5800 6200 5800
+Wire Wire Line
+	5800 4800 5650 4800
+Connection ~ 5650 4800
+Wire Wire Line
+	5650 4800 5650 5100
+Wire Wire Line
+	5800 5100 5650 5100
+Connection ~ 5650 5100
+Wire Wire Line
+	5650 5100 5650 5800
+Wire Wire Line
+	6750 4600 7000 4600
+$Comp
+L Device:CP C1
+U 1 1 5BCBFE8B
+P 7150 4650
+F 0 "C1" H 7268 4696 50  0000 L CNN
+F 1 "CP" H 7268 4605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7188 4500 50  0001 C CNN
+F 3 "~" H 7150 4650 50  0001 C CNN
+	1    7150 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7150 4500
+Wire Wire Line
+	7150 4500 7200 4500
+Wire Wire Line
+	7150 4800 7000 4800
+Wire Wire Line
+	7000 4800 7000 4600
+NoConn ~ 3700 3100
+Wire Wire Line
+	3700 2900 3500 2900
+Wire Wire Line
+	3500 2900 3500 1700
+Wire Wire Line
+	3500 1700 4800 1700
+Connection ~ 4800 1700
+NoConn ~ 4650 2500
+NoConn ~ 4650 2600
+NoConn ~ 4650 2700
+NoConn ~ 5650 2800
+NoConn ~ 5650 2900
+NoConn ~ 5650 3000
+NoConn ~ 5650 3100
+NoConn ~ 6900 2800
+NoConn ~ 6900 2900
+NoConn ~ 6900 3000
+NoConn ~ 6900 3200
+NoConn ~ 6900 3400
+NoConn ~ 6900 3500
+NoConn ~ 6900 3600
+NoConn ~ 6900 3700
+Wire Wire Line
+	6900 3300 7100 3300
+Wire Wire Line
+	7100 3300 7100 4200
+Connection ~ 7100 4200
+Wire Wire Line
+	2550 4200 7100 4200
+NoConn ~ 5650 3400
+NoConn ~ 5650 3500
+NoConn ~ 5650 3600
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5BD059FF
+P 4550 1000
+F 0 "J1" V 4490 812 50  0000 R CNN
+F 1 "Digital in 1" V 4600 1150 50  0000 R CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 4550 1000 50  0001 C CNN
+F 3 "~" H 4550 1000 50  0001 C CNN
+	1    4550 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3200 4650 3400
+Wire Wire Line
+	4650 3400 2250 3400
+Wire Wire Line
+	4650 3100 4750 3100
+Wire Wire Line
+	4750 3100 4750 3650
+Wire Wire Line
+	4750 3650 2400 3650
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5BD1A20C
+P 5100 1000
+F 0 "J2" V 5040 812 50  0000 R CNN
+F 1 "Digital in 2" V 5150 1100 50  0000 R CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 5100 1000 50  0001 C CNN
+F 3 "~" H 5100 1000 50  0001 C CNN
+	1    5100 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3000 4900 3000
+Wire Wire Line
+	4650 2900 5100 2900
+Wire Wire Line
+	5100 2900 5100 1200
+Wire Wire Line
+	4900 1300 4900 3000
+Wire Wire Line
+	5200 1200 5200 1400
+Wire Wire Line
+	4650 2800 5000 2800
+Wire Wire Line
+	5000 2800 5000 1500
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5BD35032
+P 5650 1000
+F 0 "J3" V 5590 812 50  0000 R CNN
+F 1 "Stimulus out" V 5700 1150 50  0000 R CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 5650 1000 50  0001 C CNN
+F 3 "~" H 5650 1000 50  0001 C CNN
+	1    5650 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 1200 5750 1400
+Wire Wire Line
+	5000 1500 5650 1500
+Wire Wire Line
+	5650 1200 5650 1500
+Wire Wire Line
+	5200 1400 5750 1400
+Connection ~ 5200 1400
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 5BD42868
+P 6200 1000
+F 0 "J4" V 6140 812 50  0000 R CNN
+F 1 "Analog In" V 6250 1150 50  0000 R CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 6200 1000 50  0001 C CNN
+F 3 "~" H 6200 1000 50  0001 C CNN
+	1    6200 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 1200 6300 1400
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 5BD471FA
+P 6550 1000
+F 0 "J5" V 6490 812 50  0000 R CNN
+F 1 "Digital Out" V 6600 1150 50  0000 R CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 6550 1000 50  0001 C CNN
+F 3 "~" H 6550 1000 50  0001 C CNN
+	1    6550 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 2000 7400 2000
+Wire Wire Line
+	6200 1200 6200 2000
+Wire Wire Line
+	4550 1200 4550 1300
+Wire Wire Line
+	4550 1300 4900 1300
+Wire Wire Line
+	4650 1200 4650 1400
+Connection ~ 4650 1400
+Wire Wire Line
+	4650 1400 5200 1400
+Wire Wire Line
+	5750 1400 6300 1400
+Connection ~ 5750 1400
+Connection ~ 6300 1400
+Wire Wire Line
+	6300 1400 6650 1400
+$Comp
+L Connector:Conn_01x02_Female J6
+U 1 1 5BD69F22
+P 6900 1000
+F 0 "J6" V 6840 812 50  0000 R CNN
+F 1 "Analog Out" V 6950 1150 50  0000 R CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-16_Vertical" H 6900 1000 50  0001 C CNN
+F 3 "~" H 6900 1000 50  0001 C CNN
+	1    6900 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 1200 6650 1400
+Wire Wire Line
+	7000 1200 7000 1400
+Wire Wire Line
+	7000 1400 6650 1400
+Connection ~ 6650 1400
+Wire Wire Line
+	7600 5450 7600 1450
+Wire Wire Line
+	6900 1450 6900 1200
+$Comp
+L Device:R_POT_Dual_Separate Noise1
+U 1 1 5BD9232B
+P 8400 1050
+F 0 "Noise1" V 8193 1050 50  0000 C CNN
+F 1 "Noise" V 8284 1050 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 8400 1050 50  0001 C CNN
+F 3 "~" H 8400 1050 50  0001 C CNN
+	1    8400 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 1400 8250 1400
+Wire Wire Line
+	8250 1400 8250 1050
+Connection ~ 7000 1400
+$Comp
+L Connector:Conn_01x02_Female J8
+U 1 1 5BDA4A9C
+P 10650 600
+F 0 "J8" V 10590 412 50  0000 R CNN
+F 1 "Photodiode" V 10700 750 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 10650 600 50  0001 C CNN
+F 3 "~" H 10650 600 50  0001 C CNN
+	1    10650 600 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BDB7D9D
+P 9800 1550
+F 0 "R1" V 10007 1550 50  0000 C CNN
+F 1 "R" V 9916 1550 50  0000 C CNN
+F 2 "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 9730 1550 50  0001 C CNN
+F 3 "~" H 9800 1550 50  0001 C CNN
+	1    9800 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 2400 7700 1500
+Wire Wire Line
+	7700 1500 7950 1500
+$Comp
+L Device:R_POT_Dual_Separate Syn1
+U 2 1 5BDD2E73
+P 8850 1050
+F 0 "Syn1" V 8643 1050 50  0000 C CNN
+F 1 "Syn 1" V 8734 1050 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 8850 1050 50  0001 C CNN
+F 3 "~" H 8850 1050 50  0001 C CNN
+	2    8850 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 1400 8700 1050
+$Comp
+L Device:R_POT_Dual_Separate Vm1
+U 1 1 5BDD9BED
+P 7950 1050
+F 0 "Vm1" V 7743 1050 50  0000 C CNN
+F 1 "Vm" V 7834 1050 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 7950 1050 50  0001 C CNN
+F 3 "~" H 7950 1050 50  0001 C CNN
+	1    7950 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 1400 7800 1050
+$Comp
+L Device:R_POT_Dual_Separate Syn2
+U 1 1 5BDE0A6A
+P 9300 1050
+F 0 "Syn2" V 9093 1050 50  0000 C CNN
+F 1 "Syn 2" V 9184 1050 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 9300 1050 50  0001 C CNN
+F 3 "~" H 9300 1050 50  0001 C CNN
+	1    9300 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 1400 9150 1050
+$Comp
+L Device:R_POT_Dual_Separate StimPot1
+U 1 1 5BDEEA5B
+P 9700 1050
+F 0 "StimPot1" V 9493 1050 50  0000 C CNN
+F 1 "Stim pot" V 9584 1050 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 9700 1050 50  0001 C CNN
+F 3 "~" H 9700 1050 50  0001 C CNN
+	1    9700 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 1400 9550 1050
+Wire Wire Line
+	8250 1400 8700 1400
+Connection ~ 8250 1400
+Connection ~ 8700 1400
+Wire Wire Line
+	8700 1400 9150 1400
+Connection ~ 9150 1400
+Wire Wire Line
+	9150 1400 9550 1400
+Wire Wire Line
+	8100 1050 8100 700 
+Wire Wire Line
+	9850 700  9850 1050
+Wire Wire Line
+	9450 1050 9450 700 
+Connection ~ 9450 700 
+Wire Wire Line
+	9450 700  9850 700 
+Wire Wire Line
+	9000 1050 9000 700 
+Wire Wire Line
+	8100 700  8550 700 
+Connection ~ 9000 700 
+Wire Wire Line
+	9000 700  9450 700 
+Wire Wire Line
+	8550 1050 8550 700 
+Connection ~ 8550 700 
+Wire Wire Line
+	8550 700  9000 700 
+$Comp
+L Connector:Conn_01x02_Female J7
+U 1 1 5BE20F6B
+P 10150 700
+F 0 "J7" V 10090 512 50  0000 R CNN
+F 1 "Button" V 9999 512 50  0000 R CNN
+F 2 "Button_Switch_THT:Push_E-Switch_KS01Q01" H 10150 700 50  0001 C CNN
+F 3 "~" H 10150 700 50  0001 C CNN
+	1    10150 700 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 700  10000 700 
+Wire Wire Line
+	10000 700  10000 900 
+Wire Wire Line
+	10000 900  10150 900 
+Connection ~ 9850 700 
+Wire Wire Line
+	10150 900  10200 900 
+Wire Wire Line
+	10200 900  10200 1700
+Connection ~ 10150 900 
+Connection ~ 10200 1700
+Wire Wire Line
+	10200 1700 8950 1700
+Wire Wire Line
+	9550 1400 9650 1400
+Wire Wire Line
+	9650 1400 9650 1550
+Connection ~ 9550 1400
+Wire Wire Line
+	9950 1550 10250 1550
+Wire Wire Line
+	10250 1550 10250 900 
+Wire Wire Line
+	10250 1550 10250 1900
+Wire Wire Line
+	10250 1900 2400 1900
+Wire Wire Line
+	2400 1900 2400 3650
+Connection ~ 10250 1550
+Wire Wire Line
+	3300 5800 1350 5800
+Wire Wire Line
+	1350 5800 1350 3850
+Wire Wire Line
+	1350 1400 4650 1400
+Wire Wire Line
+	7950 1200 7950 1500
+Wire Wire Line
+	7700 2500 7650 2500
+Wire Wire Line
+	7650 2500 7650 2000
+Wire Wire Line
+	7650 2000 8400 2000
+Wire Wire Line
+	8400 2000 8400 1200
+Wire Wire Line
+	7700 2600 7500 2600
+Wire Wire Line
+	7500 2600 7500 3250
+Wire Wire Line
+	7500 3250 10950 3250
+Wire Wire Line
+	10950 3250 10950 1400
+Wire Wire Line
+	10950 1400 10650 1400
+Wire Wire Line
+	10650 1400 10650 800 
+Wire Wire Line
+	9650 1400 10500 1400
+Wire Wire Line
+	10500 1400 10500 1250
+Wire Wire Line
+	10500 1250 10750 1250
+Connection ~ 9650 1400
+$Comp
+L Device:R R2
+U 1 1 5BE80B49
+P 10750 1050
+F 0 "R2" H 10820 1096 50  0000 L CNN
+F 1 "R" H 10820 1005 50  0000 L CNN
+F 2 "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 10680 1050 50  0001 C CNN
+F 3 "~" H 10750 1050 50  0001 C CNN
+	1    10750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 900  10750 800 
+Wire Wire Line
+	10750 1200 10750 1250
+Wire Wire Line
+	9400 3950 9400 4500
+Wire Wire Line
+	9400 3950 10250 3950
+Wire Wire Line
+	10250 3950 10250 4500
+Connection ~ 9400 3950
+Wire Wire Line
+	9200 5800 9200 5300
+Wire Wire Line
+	9200 5000 9400 5000
+Wire Wire Line
+	9200 5300 10400 5300
+Wire Wire Line
+	10400 5000 10250 5000
+Connection ~ 9200 5300
+Wire Wire Line
+	9200 5300 9200 5000
+Wire Wire Line
+	7900 5000 7800 5000
+Wire Wire Line
+	7800 5000 7800 5900
+Wire Wire Line
+	7800 5900 9250 5900
+Wire Wire Line
+	9250 5900 9250 5250
+Wire Wire Line
+	9250 5100 9400 5100
+Wire Wire Line
+	9250 5250 10250 5250
+Wire Wire Line
+	10250 5250 10250 5100
+Connection ~ 9250 5250
+Wire Wire Line
+	9250 5250 9250 5100
+Wire Wire Line
+	7900 5100 7700 5100
+Wire Wire Line
+	7700 5100 7700 6350
+Wire Wire Line
+	7700 6350 9000 6350
+Wire Wire Line
+	10600 6350 10600 5450
+Wire Wire Line
+	10600 5450 10250 5450
+Wire Wire Line
+	9400 5450 9000 5450
+Wire Wire Line
+	9000 5450 9000 6350
+Connection ~ 9000 6350
+Wire Wire Line
+	9000 6350 10600 6350
+Wire Wire Line
+	7900 4700 7650 4700
+Wire Wire Line
+	7650 4700 7650 6000
+Wire Wire Line
+	7650 6000 9300 6000
+Wire Wire Line
+	9300 6000 9300 5950
+Wire Wire Line
+	9300 5950 9400 5950
+Wire Wire Line
+	9300 6000 9300 6250
+Wire Wire Line
+	9300 6250 10350 6250
+Wire Wire Line
+	10350 6250 10350 5950
+Wire Wire Line
+	10350 5950 10250 5950
+Connection ~ 9300 6000
+Wire Wire Line
+	10250 6050 10250 6200
+Wire Wire Line
+	10250 6200 9400 6200
+Wire Wire Line
+	9400 6200 9400 6050
+Wire Wire Line
+	9400 6200 7850 6200
+Wire Wire Line
+	7850 6200 7850 5400
+Wire Wire Line
+	7850 5400 7900 5400
+Connection ~ 9400 6200
+Wire Wire Line
+	9100 5000 9100 6300
+Wire Wire Line
+	8850 5200 9050 5200
+Wire Wire Line
+	9050 5200 9050 4600
+Wire Wire Line
+	9050 4600 9400 4600
+Wire Wire Line
+	9050 5200 9050 5550
+Wire Wire Line
+	9050 5550 9400 5550
+Connection ~ 9050 5200
+Wire Wire Line
+	8850 4900 9250 4900
+Wire Wire Line
+	9250 4900 9250 4300
+Wire Wire Line
+	9250 4300 10500 4300
+Wire Wire Line
+	10500 4300 10500 4600
+Wire Wire Line
+	10500 4600 10250 4600
+Wire Wire Line
+	10500 4600 10500 5550
+Wire Wire Line
+	10500 5550 10250 5550
+Connection ~ 10500 4600
+Wire Wire Line
+	8850 5400 8900 5400
+Wire Wire Line
+	8950 5400 8950 4700
+Wire Wire Line
+	8950 4700 9400 4700
+Wire Wire Line
+	9400 5650 8900 5650
+Wire Wire Line
+	8900 5650 8900 5400
+Connection ~ 8900 5400
+Wire Wire Line
+	8900 5400 8950 5400
+Wire Wire Line
+	8850 5300 8900 5300
+Wire Wire Line
+	8900 5300 8900 4350
+Wire Wire Line
+	8900 4350 10400 4350
+Wire Wire Line
+	10400 4350 10400 4700
+Wire Wire Line
+	10400 4700 10350 4700
+Wire Wire Line
+	10400 5300 10400 5000
+Wire Wire Line
+	10350 4700 10350 5650
+Wire Wire Line
+	10350 5650 10250 5650
+Connection ~ 10350 4700
+Wire Wire Line
+	10350 4700 10250 4700
+Wire Wire Line
+	8850 4800 9350 4800
+Wire Wire Line
+	9350 4800 9350 5750
+Wire Wire Line
+	9350 5750 9400 5750
+Connection ~ 9350 4800
+Wire Wire Line
+	9350 4800 9400 4800
+Wire Wire Line
+	8850 5500 8950 5500
+Wire Wire Line
+	8950 5500 8950 6400
+Wire Wire Line
+	8950 6400 10800 6400
+Wire Wire Line
+	10800 6400 10800 5750
+Wire Wire Line
+	10800 5750 10250 5750
+Wire Wire Line
+	10800 5750 10800 4800
+Wire Wire Line
+	10800 4800 10250 4800
+Connection ~ 10800 5750
+Wire Wire Line
+	8850 4600 8950 4600
+Wire Wire Line
+	8950 4600 8950 4550
+Wire Wire Line
+	8950 4550 9150 4550
+Wire Wire Line
+	9200 4550 9200 4950
+Wire Wire Line
+	9200 4950 9400 4950
+Wire Wire Line
+	9400 4950 9400 4900
+Wire Wire Line
+	9150 4550 9150 5850
+Wire Wire Line
+	9150 5850 9400 5850
+Connection ~ 9150 4550
+Wire Wire Line
+	9150 4550 9200 4550
+Wire Wire Line
+	8850 4700 8850 4650
+Wire Wire Line
+	8850 4650 9000 4650
+Wire Wire Line
+	9000 4650 9000 4150
+Wire Wire Line
+	9000 4150 10550 4150
+Wire Wire Line
+	10550 4150 10550 4900
+Wire Wire Line
+	10550 4900 10250 4900
+Wire Wire Line
+	10550 4900 10550 5850
+Wire Wire Line
+	10550 5850 10250 5850
+Connection ~ 10550 4900
+Wire Wire Line
+	7700 2700 7450 2700
+Wire Wire Line
+	7450 2700 7450 1600
+Wire Wire Line
+	7450 1600 8850 1600
+Wire Wire Line
+	8850 1600 8850 1200
+Wire Wire Line
+	7700 2800 7350 2800
+Wire Wire Line
+	7350 2800 7350 1800
+Wire Wire Line
+	7350 1800 9300 1800
+Wire Wire Line
+	9300 1800 9300 1200
+Wire Wire Line
+	7700 3000 7400 3000
+Wire Wire Line
+	7400 2000 7400 3000
+Wire Wire Line
+	7600 1450 6900 1450
+Wire Wire Line
+	9700 1200 9700 1300
+Wire Wire Line
+	9700 1300 9400 1300
+Wire Wire Line
+	9400 1300 9400 1550
+Wire Wire Line
+	9400 1550 7300 1550
+Wire Wire Line
+	7300 1550 7300 2900
+Wire Wire Line
+	7300 2900 7700 2900
+Wire Wire Line
+	8650 2500 8950 2500
+$Comp
+L Device:CP_Small C2
+U 1 1 5C442C58
+P 9200 2500
+F 0 "C2" H 9288 2546 50  0000 L CNN
+F 1 "CP_Small" H 9288 2455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9200 2500 50  0001 C CNN
+F 3 "~" H 9200 2500 50  0001 C CNN
+	1    9200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2400 8950 2400
+Wire Wire Line
+	8650 2600 9200 2600
+$Comp
+L Device:R R3
+U 1 1 5C4739D5
+P 2250 3550
+F 0 "R3" H 2320 3596 50  0000 L CNN
+F 1 "R" H 2320 3505 50  0000 L CNN
+F 2 "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 2180 3550 50  0001 C CNN
+F 3 "~" H 2250 3550 50  0001 C CNN
+	1    2250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5C473A5C
+P 2100 3850
+F 0 "D1" H 2091 4066 50  0000 C CNN
+F 1 "HouseKeeping LED" H 1900 3950 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2100 3850 50  0001 C CNN
+F 3 "~" H 2100 3850 50  0001 C CNN
+	1    2100 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3700 2250 3850
+Wire Wire Line
+	1950 3850 1350 3850
+Connection ~ 1350 3850
+Wire Wire Line
+	1350 3850 1350 1400
+Wire Wire Line
+	6750 4900 7000 4900
+Wire Wire Line
+	7000 4900 7000 5800
+Connection ~ 7000 5800
+Wire Wire Line
+	7000 5800 7300 5800
+Wire Wire Line
+	7900 4500 7800 4500
+Wire Wire Line
+	7750 3950 7750 4600
+Wire Wire Line
+	7750 4600 7900 4600
+Wire Wire Line
+	7750 3950 9400 3950
+Wire Wire Line
+	7900 5500 7600 5500
+Wire Wire Line
+	7600 5500 7600 5800
+Wire Wire Line
+	7600 5800 9200 5800
+Wire Wire Line
+	7450 5600 7450 5950
+Wire Wire Line
+	7450 5600 7900 5600
+NoConn ~ 8850 5100
+NoConn ~ 7900 4900
+NoConn ~ 7900 5200
+Wire Wire Line
+	7900 5300 6200 5300
+Wire Wire Line
+	6200 5300 6200 5800
+Connection ~ 6200 5800
+Wire Wire Line
+	6200 5800 7000 5800
+Wire Wire Line
+	5800 5000 4150 5000
+Wire Wire Line
+	4150 5000 4150 6250
+Wire Wire Line
+	4150 6250 4250 6250
+$Comp
+L Device:R R6
+U 1 1 5C7440EE
+P 4400 6250
+F 0 "R6" V 4193 6250 50  0000 C CNN
+F 1 "R" V 4284 6250 50  0000 C CNN
+F 2 "Maxime:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 4330 6250 50  0001 C CNN
+F 3 "~" H 4400 6250 50  0001 C CNN
+	1    4400 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 6250 5700 6250
+Wire Wire Line
+	7600 5450 7150 5450
+Wire Wire Line
+	7150 5450 7150 6250
+Wire Wire Line
+	5700 6250 5700 6550
+Wire Wire Line
+	5700 6550 5500 6550
+Connection ~ 5700 6250
+Wire Wire Line
+	5700 6250 7150 6250
+$Comp
+L Device:CP C3
+U 1 1 5C79A3C2
+P 5350 6550
+F 0 "C3" H 5468 6596 50  0000 L CNN
+F 1 "CP" H 5468 6505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5388 6400 50  0001 C CNN
+F 3 "~" H 5350 6550 50  0001 C CNN
+	1    5350 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 5800 3900 6550
+Wire Wire Line
+	3900 6550 4750 6550
+Connection ~ 3900 5800
+Wire Wire Line
+	3900 5800 3300 5800
+Wire Wire Line
+	4750 6550 4750 7000
+Wire Wire Line
+	4750 7000 3600 7000
+Connection ~ 4750 6550
+Wire Wire Line
+	4750 6550 5200 6550
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5C7D5CA4
+P 3500 6900
+F 0 "BZ1" V 3552 6713 50  0000 R CNN
+F 1 "Buzzer" V 3461 6713 50  0000 R CNN
+F 2 "Buzzer_Beeper:Buzzer_15x7.5RM7.6" V 3475 7000 50  0001 C CNN
+F 3 "~" V 3475 7000 50  0001 C CNN
+	1    3500 6900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 1600 900  1600
+Wire Wire Line
+	900  1600 900  7000
+Wire Wire Line
+	900  7000 3000 7000
+Wire Wire Line
+	6550 1200 6550 1600
+Wire Wire Line
+	3650 4700 3650 6400
+Wire Wire Line
+	3650 6400 3000 6400
+Wire Wire Line
+	3000 6400 3000 7000
+Connection ~ 3000 7000
+Wire Wire Line
+	3000 7000 3400 7000
+Wire Wire Line
+	3650 4700 5800 4700
+NoConn ~ 5650 3900
+NoConn ~ 3700 2700
+NoConn ~ 3700 2800
+NoConn ~ 3700 3200
+$EndSCHEMATC
